@@ -1,0 +1,135 @@
+/* --- General Styles & Fonts --- */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(rgba(170, 212, 224, 0.482), rgba(168, 208, 219, 0.477)), url(../images/Gemini_Generated_Image_ejhh47ejhh47ejhh.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+    color: #005A5A; /* Deep Teal */
+}
+
+a {
+    text-decoration: none;
+    color: #FF6B6B; /* Coral Red */
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- Header & Navigation --- */
+header {
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    position: fixed;
+    top: 25px;      /* Distance from the top of the page */
+    left: 30px;     /* Distance from the left of the page */
+    z-index: 200;   /* Ensures it stays on top of other content */
+    width: 250px;   /* Adjust the size as needed */
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+header nav a {
+    color: #005A5A;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* --- Hero Section --- */
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1507525428034-b723a9ce6890'); /* Placeholder image of a beach */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 6rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 0.5rem;
+}
+
+/* --- Button Styles --- */
+.button {
+    background-color: #FF6B6B; /* Coral Red */
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.button:hover {
+    background-color: #e05252;
+}
+
+/* --- Categories & Featured Sections --- */
+.categories, .featured-highlight {
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap; /* Allows cards to stack on smaller screens */
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 250px;
+    padding: 4rem 1rem; /* Padding for text inside */
+    background-color: #F0FFF0; /* Honeydew green */
+}
+
+.card h3 {
+    margin: 0;
+}
+
+.featured-highlight h2 {
+    font-size: 2.5rem;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #005A5A; /* Deep Teal */
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+}

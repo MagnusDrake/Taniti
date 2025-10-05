@@ -1,0 +1,109 @@
+/* --- General Wireframe Styles --- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #000;
+    background-color: #fff;
+}
+
+h1, h2, h3 {
+    font-family: Arial, sans-serif;
+    color: #000;
+}
+
+a {
+    color: #0000EE; /* Standard blue to show it's a link */
+    text-decoration: underline;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto; /* Added margin for spacing */
+}
+
+/* --- Header & Navigation --- */
+header {
+    background-color: #f5f5f5; /* Light gray background */
+    border-bottom: 1px solid #333;
+    padding: 1rem 5%;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+header nav a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* --- Hero Section & Placeholders --- */
+.hero {
+    border: 2px dashed #999;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 4rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* --- Button Style --- */
+.button {
+    border: 1px solid #000;
+    color: #000;
+    padding: 0.8rem 1.5rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    background-color: #fff;
+}
+
+/* --- Categories & Cards --- */
+.categories, .activity-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.card, .activity-card {
+    border: 1px solid #999;
+    width: 250px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.card h3, .activity-card h2 {
+    margin-top: 0;
+}
+
+/* --- Shared Page Styles --- */
+.featured-highlight, .page-title, .filters, .activity-details {
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* --- Footer --- */
+footer {
+    border-top: 1px solid #333;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+    background-color: #f5f5f5;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities in Taniti</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <a href="index.html">
+        <img src="images/Taniti_Logo_Transparent.png" alt="Taniti Island Tourism Logo" class="logo">
+    </a>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="lodging.html">Lodging</a></li>
+                <li><a href="dining.html">Dining</a></li>
+                <li><a href="transportation.html">Transportation</a></li>
+                <li><a href="faq.html">Plan Your Trip (FAQ)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <h1>Things to Do in Taniti</h1>
+            <p>From thrilling adventures to relaxing beach days, find the perfect activity for your trip.</p>
+        </section>
+
+        <section class="filters">
+            <form>
+                <fieldset>
+                    <legend>Filter by Category:</legend>
+                    <input type="checkbox" id="adventure" name="category" value="adventure">
+                    <label for="adventure">Adventure</label>
+                    <input type="checkbox" id="relaxation" name="category" value="relaxation">
+                    <label for="relaxation">Relaxation</label>
+                    <input type="checkbox" id="family" name="category" value="family">
+                    <label for="family">Family-Friendly</label>
+                    <input type="checkbox" id="nature" name="category" value="nature">
+                    <label for="nature">Nature</label>
+                </fieldset>
+                <label for="sort-by">Sort By:</label>
+                <select id="sort-by" name="sort">
+                    <option value="popularity">Popularity</option>
+                    <option value="alphabetical">Alphabetical</option>
+                </select>
+            </form>
+        </section>
+
+        <section class="activity-grid">
+            <div class="activity-card">
+                <h2>Rainforest Ziplining</h2>
+                <p>Soar through the lush treetops of Taniti's famous rainforest.</p>
+                <div class="tags">
+                    <span>Adventure</span>
+                    <span>Family-Friendly</span>
+                </div>
+                <a href="ziplining-details.html" class="button">View Details</a>
+            </div>
+            <div class="activity-card">
+                <h2>Snorkeling in Yellow Leaf Bay</h2>
+                <p>Discover vibrant coral reefs and tropical fish in crystal-clear water.</p>
+                <div class="tags">
+                    <span>Relaxation</span>
+                    <span>Family-Friendly</span>
+                </div>
+                <a href="snorkeling-details.html" class="button">View Details</a>
+            </div>
+            </section>
+    </main>
+
+    <footer>
+        <p>Contact the Taniti Tourism Board</p>
+    </footer>
+
+</body>
+</html>
