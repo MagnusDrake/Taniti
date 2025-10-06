@@ -15,6 +15,12 @@ h1, h2, h3 {
     color: #005A5A; /* Deep Teal */
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
 a {
     text-decoration: none;
     color: #FF6B6B; /* Coral Red */
@@ -40,7 +46,7 @@ header {
     position: fixed;
     top: 25px;      /* Distance from the top of the page */
     left: 30px;     /* Distance from the left of the page */
-    z-index: 200;   /* Ensures it stays on top of other content */
+    z-index: 99;   /* Ensures it stays on top of other content */
     width: 250px;   /* Adjust the size as needed */
 }
 
@@ -132,4 +138,66 @@ footer {
     text-align: center;
     padding: 2rem;
     margin-top: 4rem;
+}
+/* --- Mobile Navigation System --- */
+
+/* 1. Hide the hamburger button on desktop */
+.nav-toggle {
+    display: none;
+}
+
+/* 2. Styles for the hamburger icon lines */
+.hamburger {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+    pointer-events: none;
+}
+/* --- Styles for Mobile View --- */
+@media (max-width: 768px) {
+
+    /* --- Mobile Navigation System --- */
+    .nav-toggle {
+        display: block;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    #primary-navigation {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    #primary-navigation.is-active {
+        display: flex;
+    }
+
+    /* --- Responsive Page Content --- */
+    .categories, .activity-grid, .lodging-grid, .dining-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .logo {
+        position: fixed;
+        top: -2.5%;      /* Distance from the top of the page */
+        left: 70%;     /* Distance from the left of the page */
+        z-index: 101;   /* Ensures it stays on top of other content */
+        width: 33%;   /* Adjust the size as needed */
+    }
 }
