@@ -43,30 +43,55 @@
                     <label for="american">American</label>
                     <input type="checkbox" id="pan-asian" name="cuisine" value="pan-asian">
                     <label for="pan-asian">Pan-Asian</label>
+                    <input type="checkbox" id="casual" name="cuisine" value="casual">
+                    <label for="casual">Casual</label>
+                    <input type="checkbox" id="family-friendly" name="cuisine" value="family-friendly">
+                    <label for="family-friendly">Family-Friendly</label>
                 </fieldset>
+                <label for="sort-by">Sort By:</label>
+                <select id="sort-by" name="sort">
+                    <option value="popularity">Popularity</option>
+                    <option value="alphabetical">Alphabetical</option>
+                </select>
             </form>
         </section>
 
-        <section class="dining-grid">
-            <div class="dining-card">
-                <h2>Local Fish & Rice Grill</h2>
-                <p>Enjoy the freshest catch of the day at this popular spot for authentic Tanitian cuisine.</p>
-                <div class="tags">
-                    <span>Local</span>
-                    <span>Family-Friendly</span>
+        <section class="dining-grid filterable-cards">
+            <a href="local-fish-details.html" class="card-link" data-category="local family-friendly">
+                <div class="dining-card">
+                    <h2>Local Fish & Rice Grill</h2>
+                    <p>Enjoy the freshest catch of the day at this popular spot for authentic Tanitian cuisine.</p>
+                    <div class="tags">
+                        <span>Local</span>
+                        <span>Family-Friendly</span>
+                    </div>
+                    <span class="button">View Menu</span>
                 </div>
-                <a href="local-fish-details.html" class="button">View Menu</a>
-            </div>
-            <div class="dining-card">
-                <h2>The Burger Shack</h2>
-                <p>A casual spot serving American-style burgers, fries, and shakes.</p>
-                <div class="tags">
-                    <span>American</span>
-                    <span>Casual</span>
+            </a>
+            <a href="pan-asian-details.html" class="card-link" data-category="pan-asian casual">
+                <div class="dining-card">
+                    <h2>Pan-Asian Bistro</h2>
+                    <p>A trendy bistro offering a fusion of Asian flavors in a vibrant setting.</p>
+                    <div class="tags">
+                        <span>Pan-Asian</span>
+                        <span>Casual</span>
+                    </div>
+                    <span class="button">View Menu</span>
                 </div>
-                <a href="burger-shack-details.html" class="button">View Menu</a>
-            </div>
-            </section>
+            </a>
+            <a href="burger-shack-details.html" class="card-link" data-category="american casual">
+                <div class="dining-card">
+                    <h2>The Burger Shack</h2>
+                    <p>A casual spot serving American-style burgers, fries, and shakes.</p>
+                    <div class="tags">
+                        <span>American</span>
+                        <span>Casual</span>
+                    </div>
+                    <span class="button">View Menu</span>
+                </div>
+            </a>
+            
+        </section>
     </main>
 
     <footer>

@@ -43,30 +43,54 @@
                     <label for="resort">Resort</label>
                     <input type="checkbox" id="b-and-b" name="type" value="b-and-b">
                     <label for="b-and-b">Bed & Breakfast</label>
+                    <input type="checkbox" id="hostel" name="type" value="couples">
+                    <label for="couples">Couples</label>
+                    <input type="checkbox" id="family-friendly" name="type" value="family-friendly">
+                    <label for="family-friendly">Family-Friendly</label>
                 </fieldset>
+                <label for="sort-by">Sort By:</label>
+                <select id="sort-by" name="sort">
+                    <option value="popularity">Popularity</option>
+                    <option value="alphabetical">Alphabetical</option>
+                </select>
             </form>
         </section>
 
-        <section class="lodging-grid">
-            <div class="lodging-card">
-                <h2>Four-Star Resort & Spa</h2>
-                <p>The largest resort on the island, offering luxury amenities for the whole family.</p>
-                <div class="tags">
-                    <span>Resort</span>
-                    <span>Family-Friendly</span>
+        <section class="lodging-grid filterable-cards">
+            <a href="resort-details.html" class="card-link" data-category="resort family-friendly">
+                <div class="lodging-card">
+                    <h2>Four-Star Resort & Spa</h2>
+                    <p>The largest resort on the island, offering luxury amenities for the whole family.</p>
+                    <div class="tags">
+                        <span>Resort</span>
+                        <span>Family-Friendly</span>
+                    </div>
+                    <span class="button">View Details</span>
                 </div>
-                <a href="resort-details.html" class="button">View Details</a>
-            </div>
-            <div class="lodging-card">
-                <h2>Seaside Bed & Breakfast</h2>
-                <p>A charming, family-owned B&B with beautiful ocean views.</p>
-                <div class="tags">
-                    <span>Bed & Breakfast</span>
-                    <span>Couples</span>
+            </a>
+            <a href="oceanview-details.html" class="card-link" data-category="hotel couples">
+                <div class="lodging-card">
+                    <h2>Oceanview Hotel</h2>
+                    <p>A boutique hotel with stunning ocean views and modern amenities.</p>
+                    <div class="tags">
+                        <span>Hotel</span>
+                        <span>Couples</span>
+                    </div>
+                    <span class="button">View Details</span>
                 </div>
-                <a href="b-and-b-details.html" class="button">View Details</a>
-            </div>
-            </section>
+            </a>
+            <a href="b-and-b-details.html" class="card-link" data-category="b-and-b couples">
+                <div class="lodging-card">
+                    <h2>Seaside Bed & Breakfast</h2>
+                    <p>A charming, family-owned B&B with beautiful ocean views.</p>
+                    <div class="tags">
+                        <span>Bed & Breakfast</span>
+                        <span>Couples</span>
+                    </div>
+                    <span class="button">View Details</span>
+                </div>
+            </a>
+        </section>
     </main>
 
     <footer>

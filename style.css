@@ -44,10 +44,10 @@ header {
 
 .logo {
     position: fixed;
-    top: 25px;      /* Distance from the top of the page */
+    top: 60px;      /* Distance from the top of the page */
     left: 30px;     /* Distance from the left of the page */
     z-index: 99;   /* Ensures it stays on top of other content */
-    width: 250px;   /* Adjust the size as needed */
+    width: 200px;   /* Adjust the size as needed */
 }
 
 header nav ul {
@@ -122,9 +122,57 @@ header nav a {
     padding: 4rem 1rem; /* Padding for text inside */
     background-color: #F0FFF0; /* Honeydew green */
 }
+.card, .activity-card, .lodging-card, .dining-card {
+    border: 1px solid #999;
+    min-width: 250px;
+    padding: 3rem 5%;
+    text-align: center;
+    border-radius: 8px; /* Add this for rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Add this for a shadow */
+    background-color: rgba(255, 255, 255, 0.717); /* White with 85% opacity */
+    /* ... your other styles ... */
+    min-height: 250px; /* Adjust this value until it looks right */
+}
+.card-link {
+    text-decoration: none;
+}
 
+.tags span {
+    background-color: #e0e0e0; /* A light gray */
+    color: #555;             /* A darker gray text */
+    font-size: 0.8rem;      /* Smaller font */
+    padding: 3px 8px;
+    border-radius: 12px;    /* Pill shape */
+    margin-right: 5px;
+}
 .card h3 {
     margin: 0;
+}
+.card-activities {
+    background: linear-gradient(rgba(170, 212, 224, 0.352), rgba(168, 208, 219, 0.324)), url('images/Activity card.png');
+    background-size: cover;
+    background-position: center;
+}
+.card-lodging {
+    background: linear-gradient(rgba(170, 212, 224, 0.352), rgba(168, 208, 219, 0.324)), url('images/Lodging card.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.card-dining {
+    background: linear-gradient(rgba(170, 212, 224, 0.352), rgba(168, 208, 219, 0.324)), url('images/Dining card.png');
+    background-size: cover;
+    background-position: center;
+}
+.categories, 
+.activity-grid, 
+.lodging-grid, 
+.dining-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    align-items: stretch;/* Ensures all cards have the same height */
 }
 
 .featured-highlight h2 {
@@ -138,6 +186,7 @@ footer {
     text-align: center;
     padding: 2rem;
     margin-top: 4rem;
+    clear: both;
 }
 /* --- Mobile Navigation System --- */
 
@@ -155,8 +204,40 @@ footer {
     margin: 5px 0;
     pointer-events: none;
 }
+/* --- Page-Specific Styles --- */
+.activity-details h1, .lodging-details h1, .menu-details h1 {
+    font-size: 3.5rem; /* Increase font size */
+    font-weight: 700;  /* Make font bolder */
+}
+.stroked-text {
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+   font-size: 2rem;
+}
+.gallery-image {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+    width:50%; 
+    height:auto; 
+    float: left; 
+    padding: auto; 
+    margin-right: 25px; 
+    margin-bottom: 20px;
+}
+/* --- Responsive Page Content --- */
+
+/* Example CSS Change */
+
 /* --- Styles for Mobile View --- */
 @media (max-width: 768px) {
+    .gallery-image {
+        width: 100%; /* Full width on mobile */
+        height: auto;
+        float: none; /* Remove float on mobile */
+        margin: 0 0 1rem 0; /* Adjust margin for spacing */
+    }
 
     /* --- Mobile Navigation System --- */
     .nav-toggle {
@@ -195,9 +276,13 @@ footer {
 
     .logo {
         position: fixed;
-        top: -2.5%;      /* Distance from the top of the page */
-        left: 70%;     /* Distance from the left of the page */
+        top: 0.5%;      /* Distance from the top of the page */
+        left: 76%;     /* Distance from the left of the page */
         z-index: 101;   /* Ensures it stays on top of other content */
-        width: 33%;   /* Adjust the size as needed */
+        width: 22%;   /* Adjust the size as needed */
+    }
+
+    .activity-details h1, .lodging-details h1, .menu-details h1 {
+        font-size: 2.2rem; /* A smaller, but still impactful, size for mobile */
     }
 }
